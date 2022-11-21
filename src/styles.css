@@ -1,0 +1,191 @@
+.App {
+  font-family: sans-serif;
+  height: 1000px;
+}
+
+.Header {
+  padding-top: 1rem;
+  background-color: rgb(56, 107, 195);
+}
+
+h1 {
+  margin-top: auto;
+  text-align: center;
+  color: white;
+}
+
+.App-nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(56, 107, 195);
+}
+
+.nav-bar {
+  float: left;
+}
+
+#wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+}
+
+#wrap-2 {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+}
+
+
+#nav{
+  /* 전체 메뉴 스타일 */
+  list-style: none;   /* ul 점 없애기 */
+  height: 40px;
+  padding: 5px 1px;
+  margin: 0;
+  background: rgb(56, 107, 195);
+}
+#nav li{
+  /* 메인메뉴 리스트에 대한 스타일 */
+  float: left;   /* 메뉴를 왼쪽부터 옆으로 표시한다 */
+  margin: 5px 30px;
+  padding: 0;
+  position: relative;
+}
+#nav li a{
+  /* 메인메뉴 리스트에  있는 링크의 스타일 */
+  display: block;   /* 메뉴칸을 블록으로 만들어 빈칸에 마우스를 가져다 대도 링크를 인식 할 수 있게 한다 */
+  font-weight: bold;
+  font-size: 18px;
+  padding: 7px 8px;
+  margin: 0;
+  color: white;
+  text-decoration: none;   /* 링크의 밑줄 없애기 */
+}
+#nav li:hover > a{
+  background: rgb(56, 107, 195);
+  color: white;
+  margin: 0;
+  padding: 5px;
+  border-radius: 8%;
+}
+#nav ul{
+  /* 서브메뉴의 스타일 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;   /* 고정위치 표시하기 */
+  left: 0;   /* 부모의 요소와 왼쪽 좌표값을 같게 한다. */
+  top: 40px;   /* 부모 요소로부터 45px 아래에 표시한다 */
+  width: 105px;   /* 서브메뉴의 너비 */
+  background: rgb(56, 107, 195);
+  text-align: center;
+  border-radius: 10%;
+  opacity: 0;   /* 투명하게 표시되도록 해서 평소에 안보이도록 설정 */
+}
+#nav li:hover ul {
+  opacity: 1;
+}
+#nav ul li{
+  float: none;   /* (부모요소의)떠있는 속성을 해제하여 세로로 표시되도록 한다. */
+  margin: 0;
+  padding: 0;
+  font-size: 6px;
+}
+#nav ul a{
+  font-weight: normal;
+  color: white;
+}
+#nav ul li:hover a{
+  background: rgb(145, 160, 211);
+  font-weight: bold;
+
+}
+.bg-custom{
+background-image: linear-gradient(#1867c7, rgb(56, 107, 195));
+bottom: 0;
+width: 98.8%;
+height: 210px;
+margin-top: 10rem;
+}
+.divbox{
+width: 100%;
+height: 180px;
+padding-left: 5%;
+bottom: 0;
+
+}
+.bg-bottom{
+background-color: #0097e6;
+}
+.pt-30{
+padding-top: 30px;
+}
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+h3,p,a{
+color: #fff;
+}
+p{
+font-size: 10px;
+margin: 0px;
+}
+h2{
+font-weight:700;
+font-size:25px;
+letter-spacing: 2px;
+margin-bottom: 3px;
+}
+h2:hover{
+text-decoration: underline;
+color: rgb(24, 2, 166);
+}
+h3{
+font-weight:700;
+font-size: 26px;
+letter-spacing: 2px;
+}
+li{
+/* padding-top: 10px; */
+display: inline-block;
+/* padding-left: 30px; */
+
+}
+a{
+text-decoration: none;
+}
+.link_a {
+padding-left: 80%;
+}
+a:hover{
+text-decoration: none;
+color:#ddd;
+}
+.right{
+float: right;
+margin-top: 50px;
+margin-right: 150px;
+}
+
+.col-md-3 {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  position: absolute;
+
+}
+
+.a_link {
+margin-left: 300px;
+}
+
+.coll_title {
+margin-bottom: 20px;
+}
